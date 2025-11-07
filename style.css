@@ -1217,7 +1217,6 @@ body[dir="rtl"] .cta-button.primary:hover svg {
     font-family: inherit;
     gap: 18px;
 }
-
 body[dir="ltr"] .faq-question {
     text-align: left;
 }
@@ -1236,8 +1235,8 @@ body[dir="ltr"] .faq-question {
 }
 
 body[dir="ltr"] .faq-icon {
-    margin-right: 0;
-    margin-left: 12px;
+    margin-right: 12px;
+    margin-left: 0;
 }
 
 .faq-item.active .faq-icon {
@@ -1256,10 +1255,20 @@ body[dir="ltr"] .faq-icon {
 }
 
 .faq-answer p {
-    padding: 0 5px 18px;
+    padding: 0 12px 20px;
     color: var(--gray);
     line-height: 1.75;
     font-size: 0.98rem;
+}
+
+body[dir="ltr"] .faq-answer p {
+    text-align: left;
+    padding: 0 16px 20px;
+}
+
+body[dir="ltr"] .faq-icon {
+    margin-left: 12px;
+    margin-right: 0;
 }
 
 /* ===== Registration Section ===== */
